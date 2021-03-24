@@ -1,15 +1,15 @@
 import SlideSwitch from './components/SlideSwitch/index'
 
 const components = [
-    SlideSwitch
+  SlideSwitch
 ]
 
 const install = (Vue) => {
-    if (install.installed) return
+  if (install.installed) return
 
-    components.map(component => {
-        Vue.component(component.name, component)
-    })
+  components.map(component => {
+      Vue.component(component.name, component)
+  })
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
